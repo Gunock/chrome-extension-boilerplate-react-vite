@@ -9,35 +9,25 @@
   },
   "action": {
     "default_title": "Chrome Extension React",
-    "default_popup": "src/popup/index.html",
+    "default_popup": "popup/index.html",
     "default_icon": "assets/icons/icon-34.png"
   },
   "content_scripts": [
     {
-      "js": [
-        "src/content/index.ts"
-      ],
-      "matches": [
-        "*://*/*"
-      ]
+      "js": ["content/index.js"],
+      "matches": ["*://*/*"]
     }
   ],
   "background": {
-    "service_worker": "src/background/index.ts"
+    "service_worker": "background/index.js"
   },
   "web_accessible_resources": [
     {
-      "resources": [
-        "assets/icons/*.png"
-      ],
+      "resources": ["assets/icons/*.png"],
       "matches": [],
       "extension_ids": []
     }
   ],
-  "permissions": [
-    "storage",
-    "tabs",
-    "activeTab"
-  ],
+  "permissions": ["storage", "tabs", "activeTab"],
   "host_permissions": []
 }

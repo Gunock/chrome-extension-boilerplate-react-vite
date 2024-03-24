@@ -51,16 +51,16 @@ export default function HomePage(): ReactElement {
     <>
       <PopupHeader />
       <PopupContent>
-        <Stack alignItems="center" spacing={1}>
-          <Box alignItems="center">
+        <Stack alignItems='center' spacing={1}>
+          <Box alignItems='center'>
             <h1>My Chromium extension</h1>
           </Box>
 
           <h1>Scraped title: {scrapedPageTitle}</h1>
 
           <Button
-            className="scrap-button"
-            variant="contained"
+            className='scrap-button'
+            variant='contained'
             disabled={disableScrapButton}
             onClick={scrap}
           >
