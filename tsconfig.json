@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "types": ["chrome-types"],
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "vite.config.popup.ts", "vite.config.background.ts", "vite.config.content.ts"],
+  "extends": "./tsconfig.common.json"
+}
