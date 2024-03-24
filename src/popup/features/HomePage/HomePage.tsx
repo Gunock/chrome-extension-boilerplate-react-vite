@@ -1,6 +1,6 @@
 import './HomePage.css';
 
-import {Button, Stack} from '@mui/material';
+import {Alert, Button, Snackbar, Stack} from '@mui/material';
 import Box from '@mui/material/Box';
 import {ReactElement, useEffect, useState} from 'react';
 
@@ -17,16 +17,31 @@ const CACHE_KEY = 'scrapedPageTitle';
 
 export default function HomePage(): ReactElement {
   const [scrapedPageTitle, setScrapedPageTitle] = useState<string>('');
-  const [disableScrapButton, setDisableScrapButton] = useState<boolean>(false);
+  const [disableScrapeButton, setDisableScrapeButton] = useState<boolean>(false);
 
-  async function scrap() {
-    setDisableScrapButton(true);
+  const [showErrorSnackbar, setShowErrorSnackbar] = useState(false);
+  const [errorSnackbarMessage, setErrorSnackbarMessage] = useState('');
+
+  function handleSnackbarClose() {
+    setShowErrorSnackbar(false);
+  }
+
+  async function scrape() {
+    setDisableScrapeButton(true);
 
     const message: ChromeMessage<ScraperMessage> = {
       type: ChromeMessageType.SCRAPER_COMMAND,
-      payload: {command: ScraperCommand.SCRAP}
+      payload: {command: ScraperCommand.SCRAPE}
     };
-    await ChromeApiWrapper.sendTabMessage(message);
+
+    try {
+      await ChromeApiWrapper.sendTabMessage(message);
+    } catch (e) {
+      console.error(e);
+      setErrorSnackbarMessage('Failed to scrape page title. Please check console logs.');
+      setShowErrorSnackbar(true);
+      setDisableScrapeButton(false);
+    }
   }
 
   useEffect(() => {
@@ -42,7 +57,7 @@ export default function HomePage(): ReactElement {
 
       chrome.storage.session.set({[CACHE_KEY]: message.payload});
       setScrapedPageTitle(message.payload);
-      setDisableScrapButton(false);
+      setDisableScrapeButton(false);
       return false;
     });
   }, []);
@@ -56,18 +71,25 @@ export default function HomePage(): ReactElement {
             <h1>My Chromium extension</h1>
           </Box>
 
-          <h1>Scraped title: {scrapedPageTitle}</h1>
+          <p>
+            <strong>Scraped title:</strong> {scrapedPageTitle}
+          </p>
 
           <Button
-            className='scrap-button'
+            className='scrape-button'
             variant='contained'
-            disabled={disableScrapButton}
-            onClick={scrap}
+            disabled={disableScrapeButton}
+            onClick={scrape}
           >
             Scrape page title
           </Button>
         </Stack>
       </PopupContent>
+      <Snackbar open={showErrorSnackbar} autoHideDuration={5000} onClose={handleSnackbarClose}>
+        <Alert className='alert-snackbar-alert' severity='error' onClose={handleSnackbarClose}>
+          {errorSnackbarMessage}
+        </Alert>
+      </Snackbar>
     </>
   );
 }

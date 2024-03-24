@@ -1,23 +1,25 @@
 import {ChromeMessage, ChromeMessageType} from '../common/chrome-api-wrapper';
 import {ScraperCommand, ScraperMessage} from '../common/types/scraper';
 
-async function handleScrapCommand() {
+async function handleScrapeCommand() {
   const pageTitle = document.title;
   const message = new ChromeMessage(ChromeMessageType.SCRAPING_RESULTS, pageTitle);
   await chrome.runtime.sendMessage(chrome.runtime.id, message);
 }
 
-console.log('Chrome plugin content script loaded');
 chrome.runtime.onMessage.addListener((message: ChromeMessage<ScraperMessage>) => {
-  if (message.type === undefined || message.type !== ChromeMessageType.SCRAPER_COMMAND) {
+  console.debug('Received message', message);
+  if (message.type !== ChromeMessageType.SCRAPER_COMMAND) {
     return false;
   }
 
-  if (message.payload.command === ScraperCommand.SCRAP) {
-    handleScrapCommand().catch((error) => console.error(error));
+  if (message.payload.command === ScraperCommand.SCRAPE) {
+    handleScrapeCommand().catch((error) => console.error(error));
   }
 
   return false;
 });
+
+console.debug('Chrome plugin content script loaded');
 
 export {};
