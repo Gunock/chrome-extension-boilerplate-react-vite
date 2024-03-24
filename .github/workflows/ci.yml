@@ -12,18 +12,15 @@ jobs:
   ci-ChromeExtension:
     name: Chrome extension CI
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: chrome-extension
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'yarn'
-          cache-dependency-path: 'chrome-extension/yarn.lock'
+          cache-dependency-path: 'yarn.lock'
           registry-url: 'https://npm.pkg.github.com'
 
       - name: Install dependencies
