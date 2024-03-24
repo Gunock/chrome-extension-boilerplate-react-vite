@@ -1,0 +1,16 @@
+.popup-logo {
+  pointer-events: none;
+  width: 32px;
+  height: 32px;
+  padding-right: 8px;
+}
+
+.popup-header {
+  background-color: #0a0f19;
+  color: #f4f4f5;
+  height: 64px;
+}
+
+.popup-header button {
+  color: #f4f4f5;
+}
