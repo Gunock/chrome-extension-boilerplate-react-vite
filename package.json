@@ -2,6 +2,7 @@
   "name": "chrome-extension-boilerplate-react-vite",
   "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

@@ -1,10 +1,10 @@
-import {ChromeApiWrapper, ChromeMessage, ChromeMessageType} from '../common/chrome-api-wrapper';
+import {ChromeMessage, ChromeMessageType} from '../common/chrome-api-wrapper';
 import {ScraperCommand, ScraperMessage} from '../common/types/scraper';
 
 async function handleScrapCommand() {
   const pageTitle = document.title;
   const message = new ChromeMessage(ChromeMessageType.SCRAPING_RESULTS, pageTitle);
-  await ChromeApiWrapper.sendRuntimeMessage(message);
+  await chrome.runtime.sendMessage(chrome.runtime.id, message);
 }
 
 console.log('Chrome plugin content script loaded');
