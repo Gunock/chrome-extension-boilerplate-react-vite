@@ -1,4 +1,4 @@
-<img src="assets/img/icon-128.png" width="64"/>
+<img src="assets/icons/icon-128.png" width="64"/>
 
 # Chrome Extension (MV3) Boilerplate with React 18 and Vite 5
 
