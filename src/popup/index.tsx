@@ -14,8 +14,8 @@ function Index(): ReactElement {
                 <AppShell>
                     <Suspense fallback={<PopupHeader />}>
                         <Routes>
-                            <Route path='/' element={<PopupHeader />} />
-                            <Route path='/home-page' element={<HomePage />} />
+                            <Route path="/" element={<PopupHeader />} />
+                            <Route path="/home-page" element={<HomePage />} />
                         </Routes>
                     </Suspense>
                 </AppShell>

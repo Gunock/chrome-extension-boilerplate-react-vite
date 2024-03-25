@@ -66,8 +66,8 @@ export default function HomePage(): ReactElement {
         <>
             <PopupHeader />
             <PopupContent>
-                <Stack alignItems='center' spacing={1}>
-                    <Box alignItems='center'>
+                <Stack alignItems="center" spacing={1}>
+                    <Box alignItems="center">
                         <h1>My Chromium extension</h1>
                     </Box>
 
@@ -76,8 +76,8 @@ export default function HomePage(): ReactElement {
                     </p>
 
                     <Button
-                        className='scrape-button'
-                        variant='contained'
+                        className="scrape-button"
+                        variant="contained"
                         disabled={disableScrapeButton}
                         onClick={scrape}
                     >
@@ -91,8 +91,8 @@ export default function HomePage(): ReactElement {
                 onClose={handleSnackbarClose}
             >
                 <Alert
-                    className='alert-snackbar-alert'
-                    severity='error'
+                    className="alert-snackbar-alert"
+                    severity="error"
                     onClose={handleSnackbarClose}
                 >
                     {errorSnackbarMessage}

@@ -10,5 +10,5 @@ export default function AppShell(props: {children?: ReactNode}): ReactElement {
         navigate('/home-page');
     }, []);
 
-    return <div className='App'>{props.children}</div>;
+    return <div className="App">{props.children}</div>;
 }

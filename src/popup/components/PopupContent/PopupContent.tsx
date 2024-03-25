@@ -5,7 +5,7 @@ import {ReactElement, ReactNode} from 'react';
 
 export default function PopupContent(props: {children?: ReactNode}): ReactElement {
     return (
-        <Box className='popup-content' display='flex' justifyContent='center' alignItems='center'>
+        <Box className="popup-content" display="flex" justifyContent="center" alignItems="center">
             {props.children}
         </Box>
     );
