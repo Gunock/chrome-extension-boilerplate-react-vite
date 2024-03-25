@@ -1,21 +1,26 @@
 {
-  "compilerOptions": {
-    "target": "es2022",
-    "module": "esnext",
-    "lib": ["esnext", "dom", "dom.iterable"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "esnext",
+        "lib": ["esnext", "dom", "dom.iterable"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
 
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "types": ["chrome-types"]
-  },
-  "include": ["src", "vite.config.popup.ts", "vite.config.background.ts", "vite.config.content.ts"]
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "types": ["chrome-types"]
+    },
+    "include": [
+        "src",
+        "vite.config.popup.ts",
+        "vite.config.background.ts",
+        "vite.config.content.ts"
+    ]
 }

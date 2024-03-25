@@ -1,33 +1,33 @@
 {
-  "manifest_version": 3,
-  "name": "Chrome Extension with React & Vite",
-  "version": "1.0.0",
-  "description": "A chrome extension boilerplate built with React 18 and Vite 5",
-  "icons": {
-    "34": "assets/icons/icon-34.png",
-    "128": "assets/icons/icon-128.png"
-  },
-  "action": {
-    "default_title": "Chrome Extension React",
-    "default_popup": "popup/index.html",
-    "default_icon": "assets/icons/icon-34.png"
-  },
-  "content_scripts": [
-    {
-      "js": ["content/index.js"],
-      "matches": ["*://*/*"]
-    }
-  ],
-  "background": {
-    "service_worker": "background/index.js"
-  },
-  "web_accessible_resources": [
-    {
-      "resources": ["assets/icons/*.png"],
-      "matches": [],
-      "extension_ids": []
-    }
-  ],
-  "permissions": ["storage", "tabs", "activeTab"],
-  "host_permissions": []
+    "manifest_version": 3,
+    "name": "Chrome Extension with React & Vite",
+    "version": "1.0.0",
+    "description": "A chrome extension boilerplate built with React 18 and Vite 5",
+    "icons": {
+        "34": "assets/icons/icon-34.png",
+        "128": "assets/icons/icon-128.png"
+    },
+    "action": {
+        "default_title": "Chrome Extension React",
+        "default_popup": "popup/index.html",
+        "default_icon": "assets/icons/icon-34.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["content/index.js"],
+            "matches": ["*://*/*"]
+        }
+    ],
+    "background": {
+        "service_worker": "background/index.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["assets/icons/*.png"],
+            "matches": [],
+            "extension_ids": []
+        }
+    ],
+    "permissions": ["storage", "tabs", "activeTab"],
+    "host_permissions": []
 }

@@ -1,7 +1,7 @@
 export enum ScraperCommand {
-  SCRAPE
+    SCRAPE
 }
 
 export interface ScraperMessage {
-  command: ScraperCommand;
+    command: ScraperCommand;
 }

@@ -3,31 +3,31 @@ name: ci
 on: [push]
 
 permissions:
-  contents: read
+    contents: read
 
 env:
-  NODE_VERSION: '20'
+    NODE_VERSION: '20'
 
 jobs:
-  ci-ChromeExtension:
-    name: Chrome extension CI
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    ci-ChromeExtension:
+        name: Chrome extension CI
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'yarn'
-          cache-dependency-path: 'yarn.lock'
-          registry-url: 'https://npm.pkg.github.com'
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+                  cache: 'yarn'
+                  cache-dependency-path: 'yarn.lock'
+                  registry-url: 'https://npm.pkg.github.com'
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+            - name: Install dependencies
+              run: yarn install --frozen-lockfile
 
-      - name: Lint the code
-        run: yarn run lint
+            - name: Lint the code
+              run: yarn run lint
 
-      - name: Build the code
-        run: yarn run build
+            - name: Build the code
+              run: yarn run build

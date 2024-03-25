@@ -16,16 +16,16 @@ from [chrome-extension-boilerplate-react](https://github.com/lxieyang/chrome-ext
 This is a basic Chrome Extensions boilerplate to help you write modular and modern Javascript code and load CSS easily.
 This boilerplate is updated with:
 
-- [Chrome Extension Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/)
-- [React 18](https://reactjs.org)
-- [MUI](https://mui.com/)
-- ESLint:
-  - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
-  - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
-  - [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)
-  - [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
-- [Prettier](https://prettier.io/)
-- [TypeScript](https://www.typescriptlang.org/)
+-   [Chrome Extension Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/)
+-   [React 18](https://reactjs.org)
+-   [MUI](https://mui.com/)
+-   ESLint:
+    -   [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+    -   [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
+    -   [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)
+    -   [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
+-   [Prettier](https://prettier.io/)
+-   [TypeScript](https://www.typescriptlang.org/)
 
 I have avoided using CRXJS Vite Plugin on purpose as it's last update was in 2022, and it could possibly have some
 issues with newer versions of Vite.
@@ -43,10 +43,10 @@ Please open up an issue to nudge me to keep the npm packages up-to-date.
 5. Run `yarn install` to install the dependencies.
 6. Run `yarn dist`
 7. Load your extension on Chrome following:
-   1. Access `chrome://extensions/`
-   2. Turn the `Developer mode` switch on (top right corner)
-   3. Click on `Load unpacked`
-   4. Select the `dist` folder.
+    1. Access `chrome://extensions/`
+    2. Turn the `Developer mode` switch on (top right corner)
+    3. Click on `Load unpacked`
+    4. Select the `dist` folder.
 8. Happy hacking.
 
 ## Structure
@@ -81,7 +81,7 @@ at the [official guide](https://developer.chrome.com/webstore/publish) to more i
 
 ## Resources:
 
-- [Chrome Extension documentation](https://developer.chrome.com/extensions/getstarted)
+-   [Chrome Extension documentation](https://developer.chrome.com/extensions/getstarted)
 
 ---
 
