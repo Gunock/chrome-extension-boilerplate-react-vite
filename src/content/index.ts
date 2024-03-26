@@ -1,5 +1,5 @@
-import {ChromeMessage, ChromeMessageType} from '../common/chrome-api-wrapper';
-import {ScraperCommand, ScraperMessage} from '../common/types/scraper';
+import { ChromeMessage, ChromeMessageType } from '../common/chrome-api-wrapper';
+import { ScraperCommand, ScraperMessage } from '../common/types/scraper';
 
 async function handleScrapeCommand() {
     const pageTitle = document.title;

@@ -15,7 +15,6 @@ export default tseslint.config(
     ...tseslint.configs.recommended,
     reactRecommended,
     reactJsxRuntime,
-    eslintConfigPrettier,
     {
         plugins: {
             'simple-import-sort': simpleImportSort
@@ -24,5 +23,6 @@ export default tseslint.config(
             'simple-import-sort/imports': 'warn',
             'simple-import-sort/exports': 'warn'
         }
-    }
+    },
+    eslintConfigPrettier
 );

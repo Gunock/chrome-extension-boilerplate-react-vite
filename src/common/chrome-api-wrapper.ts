@@ -28,7 +28,7 @@ export class ChromeApiWrapper {
 
         // Prevents code from failing when used too soon
         while (Date.now() - dateStarted < 5000) {
-            const tabs = await chrome.tabs.query({active: true, lastFocusedWindow: true});
+            const tabs = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
 
             const currentTab = tabs[0];
             if (currentTab?.status === 'complete') {

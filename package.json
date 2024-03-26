@@ -8,18 +8,8 @@
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "format": "prettier --write .",
-        "watch": "yarn dist && yarn watch:popup",
-        "watch:background": "vite --config vite.config.background.ts build --watch",
-        "watch:content": "vite --config vite.config.content.ts build --watch",
-        "watch:popup": "vite --config vite.config.popup.ts build --watch",
-        "build": "yarn build:background && yarn build:content && yarn build:popup",
-        "build:background": "vite --config vite.config.background.ts build",
-        "build:content": "vite --config vite.config.content.ts build",
-        "build:popup": "vite --config vite.config.popup.ts build",
-        "clean": "rimraf dist",
-        "copy:static": "copyfiles manifest.json assets/**/* dist",
-        "dist:dev": "yarn lint && yarn dist",
-        "dist": "yarn clean && yarn build && yarn copy:static"
+        "watch": "vite build --watch",
+        "build": "vite build"
     },
     "dependencies": {
         "@emotion/react": "^11.11.4",
@@ -34,6 +24,7 @@
         "react-router-dom": "^6.22.3"
     },
     "devDependencies": {
+        "@crxjs/vite-plugin": "2.0.0-beta.23",
         "@eslint/js": "^8.57.0",
         "@types/react": "^18.2.69",
         "@types/react-dom": "^18.2.22",
