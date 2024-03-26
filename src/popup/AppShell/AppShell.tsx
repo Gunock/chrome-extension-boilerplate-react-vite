@@ -1,9 +1,9 @@
 import './AppShell.css';
 
-import {ReactElement, ReactNode, useEffect} from 'react';
-import {useNavigate} from 'react-router-dom';
+import { ReactElement, ReactNode, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default function AppShell(props: {children?: ReactNode}): ReactElement {
+export default function AppShell(props: { children?: ReactNode }): ReactElement {
     const navigate = useNavigate();
 
     useEffect(() => {

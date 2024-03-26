@@ -9,17 +9,17 @@
     },
     "action": {
         "default_title": "Chrome Extension React",
-        "default_popup": "popup/index.html",
+        "default_popup": "src/popup/index.html",
         "default_icon": "assets/icons/icon-34.png"
     },
     "content_scripts": [
         {
-            "js": ["content/index.js"],
+            "js": ["src/content/index.ts"],
             "matches": ["*://*/*"]
         }
     ],
     "background": {
-        "service_worker": "background/index.js"
+        "service_worker": "src/background/index.ts"
     },
     "web_accessible_resources": [
         {

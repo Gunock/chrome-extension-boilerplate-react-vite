@@ -1,15 +1,15 @@
 import './HomePage.css';
 
-import {Alert, Button, Snackbar, Stack} from '@mui/material';
+import { Alert, Button, Snackbar, Stack } from '@mui/material';
 import Box from '@mui/material/Box';
-import {ReactElement, useEffect, useState} from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 
 import {
     ChromeApiWrapper,
     ChromeMessage,
     ChromeMessageType
 } from '../../../common/chrome-api-wrapper';
-import {ScraperCommand, ScraperMessage} from '../../../common/types/scraper';
+import { ScraperCommand, ScraperMessage } from '../../../common/types/scraper';
 import PopupContent from '../../components/PopupContent/PopupContent';
 import PopupHeader from '../../components/PopupHeader/PopupHeader';
 
@@ -31,7 +31,7 @@ export default function HomePage(): ReactElement {
 
         const message: ChromeMessage<ScraperMessage> = {
             type: ChromeMessageType.SCRAPER_COMMAND,
-            payload: {command: ScraperCommand.SCRAPE}
+            payload: { command: ScraperCommand.SCRAPE }
         };
 
         try {
@@ -55,7 +55,7 @@ export default function HomePage(): ReactElement {
                 return false;
             }
 
-            chrome.storage.session.set({[CACHE_KEY]: message.payload});
+            chrome.storage.session.set({ [CACHE_KEY]: message.payload });
             setScrapedPageTitle(message.payload);
             setDisableScrapeButton(false);
             return false;
