@@ -14,11 +14,12 @@ from [chrome-extension-boilerplate-react](https://github.com/lxieyang/chrome-ext
 ## Features
 
 This is a basic Chrome Extensions boilerplate to help you write modular and modern Javascript code and load CSS easily.
-This boilerplate is updated with:
+This boilerplate is using:
 
 -   [Chrome Extension Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/)
 -   [React 18](https://reactjs.org)
 -   [MUI](https://mui.com/)
+-   [CRXJS Vite Plugin](https://www.npmjs.com/package/@crxjs/vite-plugin/v/2.0.0-beta.23)
 -   ESLint:
     -   [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
     -   [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
@@ -26,9 +27,6 @@ This boilerplate is updated with:
     -   [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
 -   [Prettier](https://prettier.io/)
 -   [TypeScript](https://www.typescriptlang.org/)
-
-I have avoided using CRXJS Vite Plugin on purpose as it's last update was in 2022, and it could possibly have some
-issues with newer versions of Vite.
 
 Please open up an issue to nudge me to keep the npm packages up-to-date.
 
@@ -39,9 +37,9 @@ Please open up an issue to nudge me to keep the npm packages up-to-date.
 1. Check if your [Node.js](https://nodejs.org/) version is >= **18**.
 2. Clone this repository.
 3. Change the package's `name`, `description`, and `repository` fields in `package.json`.
-4. Change the name of your extension on `src/manifest.json`.
+4. Change the name of your extension in `manifest.json`.
 5. Run `yarn install` to install the dependencies.
-6. Run `yarn dist`
+6. Run `yarn build`
 7. Load your extension on Chrome following:
     1. Access `chrome://extensions/`
     2. Turn the `Developer mode` switch on (top right corner)
@@ -64,16 +62,14 @@ This boilerplate supports TypeScript! Everything that can be written in TypeScri
 
 ## Change Watchers
 
-This boilerplate has watch scripts for the popup (`yarn watch:popup`), background script (`yarn watch:background`), and
-content script (`yarn watch:content`).
-`yarn dist` has to be run first to copy assets, `manifest.json` and Chrome extension files to the `dist` folder.
+This boilerplate has a watch script (`yarn watch`) which will update the extension's code every time you save a file.
 
 ## Packing
 
 After the development of your extension run the command
 
 ```
-$ yarn dist
+$ yarn build
 ```
 
 Now, the content of `dist` folder will be the extension ready to be submitted to the Chrome Web Store. Just take a look
