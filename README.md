@@ -2,10 +2,13 @@
 
 # Chrome Extension (MV3) Boilerplate with React 18 and Vite 5
 
-[//]: # 'TODO: Publish the template on NPM'
-[//]: # '[![npm](https://img.shields.io/npm/v/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react)'
-[//]: # '[![npm-download](https://img.shields.io/npm/dw/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react)'
-[//]: # '[![npm](https://img.shields.io/npm/dm/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react)'
+[//]: # (# 'TODO: Publish the template on NPM')
+
+[//]: # ([![npm]&#40;https://img.shields.io/npm/v/chrome-extension-boilerplate-react&#41;]&#40;https://www.npmjs.com/package/chrome-extension-boilerplate-react&#41;)
+
+[//]: # ([![npm-download](https://img.shields.io/npm/dw/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react))
+
+[//]: # ([![npm](https://img.shields.io/npm/dm/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react))
 
 This repository contains a boilerplate for building Chrome Extensions with React 18, TypeScript, and Vite 5.
 This boilerplate is inspired by and adapted
@@ -16,17 +19,17 @@ from [chrome-extension-boilerplate-react](https://github.com/lxieyang/chrome-ext
 This is a basic Chrome Extensions boilerplate to help you write modular and modern Javascript code and load CSS easily.
 This boilerplate is using:
 
--   [Chrome Extension Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/)
--   [React 18](https://reactjs.org)
--   [MUI](https://mui.com/)
--   [CRXJS Vite Plugin](https://www.npmjs.com/package/@crxjs/vite-plugin/v/2.0.0-beta.23)
--   ESLint:
-    -   [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
-    -   [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
-    -   [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)
-    -   [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
--   [Prettier](https://prettier.io/)
--   [TypeScript](https://www.typescriptlang.org/)
+- [Chrome Extension Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/)
+- [React 18](https://reactjs.org)
+- [MUI](https://mui.com/)
+- [CRXJS Vite Plugin](https://www.npmjs.com/package/@crxjs/vite-plugin/v/2.0.0-beta.23)
+- ESLint:
+    - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+    - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
+    - [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)
+    - [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
+- [Prettier](https://prettier.io/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 Please open up an issue to nudge me to keep the npm packages up-to-date.
 
@@ -77,7 +80,7 @@ at the [official guide](https://developer.chrome.com/webstore/publish) to more i
 
 ## Resources:
 
--   [Chrome Extension documentation](https://developer.chrome.com/extensions/getstarted)
+- [Chrome Extension documentation](https://developer.chrome.com/extensions/getstarted)
 
 ---
 
