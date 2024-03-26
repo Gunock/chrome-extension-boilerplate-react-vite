@@ -2,14 +2,6 @@
 
 # Chrome Extension (MV3) Boilerplate with React 18 and Vite 5
 
-[//]: # (# 'TODO: Publish the template on NPM')
-
-[//]: # ([![npm]&#40;https://img.shields.io/npm/v/chrome-extension-boilerplate-react&#41;]&#40;https://www.npmjs.com/package/chrome-extension-boilerplate-react&#41;)
-
-[//]: # ([![npm-download](https://img.shields.io/npm/dw/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react))
-
-[//]: # ([![npm](https://img.shields.io/npm/dm/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react))
-
 This repository contains a boilerplate for building Chrome Extensions with React 18, TypeScript, and Vite 5.
 This boilerplate is inspired by and adapted
 from [chrome-extension-boilerplate-react](https://github.com/lxieyang/chrome-extension-boilerplate-react).
