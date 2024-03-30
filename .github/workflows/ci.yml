@@ -21,7 +21,6 @@ jobs:
                   node-version: ${{ env.NODE_VERSION }}
                   cache: 'yarn'
                   cache-dependency-path: 'yarn.lock'
-                  registry-url: 'https://npm.pkg.github.com'
 
             - name: Install dependencies
               run: yarn install --frozen-lockfile
