@@ -8,8 +8,8 @@
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "format": "prettier --write .",
-        "watch": "vite build --watch",
-        "build": "vite build"
+        "watch": "tsc && vite build --watch",
+        "build": "tsc && vite build"
     },
     "dependencies": {
         "@emotion/react": "^11.11.4",
