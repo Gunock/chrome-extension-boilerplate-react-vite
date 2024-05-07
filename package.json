@@ -13,32 +13,30 @@
     },
     "dependencies": {
         "@emotion/react": "^11.11.4",
-        "@emotion/styled": "^11.11.0",
-        "@fontsource/roboto": "^5.0.12",
-        "@mui/icons-material": "^5.15.14",
-        "@mui/material": "^5.15.14",
-        "@mui/system": "^5.15.14",
+        "@emotion/styled": "^11.11.5",
+        "@fontsource/roboto": "^5.0.13",
+        "@mui/icons-material": "^5.15.16",
+        "@mui/material": "^5.15.16",
+        "@mui/system": "^5.15.15",
         "axios": "^1.6.8",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-router-dom": "^6.22.3"
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.23.0"
     },
     "devDependencies": {
         "@crxjs/vite-plugin": "2.0.0-beta.23",
         "@eslint/js": "^8.57.0",
-        "@types/react": "^18.2.69",
-        "@types/react-dom": "^18.2.22",
-        "@typescript-eslint/eslint-plugin": "^7.3.1",
-        "@typescript-eslint/parser": "^7.3.1",
+        "@types/react": "^18.3.1",
+        "@types/react-dom": "^18.3.0",
         "@vitejs/plugin-react": "^4.2.1",
-        "chrome-types": "^0.1.274",
+        "chrome-types": "^0.1.282",
         "eslint": "^8.57.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-react": "^7.34.1",
-        "eslint-plugin-simple-import-sort": "^12.0.0",
+        "eslint-plugin-simple-import-sort": "^12.1.0",
         "prettier": "^3.2.5",
-        "typescript": "5.4.3",
-        "typescript-eslint": "^7.3.1",
-        "vite": "^5.2.6"
+        "typescript": "5.4.5",
+        "typescript-eslint": "^7.8.0",
+        "vite": "^5.2.11"
     }
 }

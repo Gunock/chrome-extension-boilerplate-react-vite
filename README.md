@@ -11,17 +11,17 @@ from [chrome-extension-boilerplate-react](https://github.com/lxieyang/chrome-ext
 This is a basic Chrome Extensions boilerplate to help you write modular and modern Javascript code and load CSS easily.
 This boilerplate is using:
 
-- [Chrome Extension Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/)
-- [React 18](https://reactjs.org)
-- [MUI](https://mui.com/)
-- [CRXJS Vite Plugin](https://www.npmjs.com/package/@crxjs/vite-plugin/v/2.0.0-beta.23)
-- ESLint:
-    - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
-    - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
-    - [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)
-    - [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
-- [Prettier](https://prettier.io/)
-- [TypeScript](https://www.typescriptlang.org/)
+-   [Chrome Extension Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/)
+-   [React 18](https://reactjs.org)
+-   [MUI](https://mui.com/)
+-   [CRXJS Vite Plugin](https://www.npmjs.com/package/@crxjs/vite-plugin/v/2.0.0-beta.23)
+-   ESLint:
+    -   [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+    -   [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
+    -   [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)
+    -   [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
+-   [Prettier](https://prettier.io/)
+-   [TypeScript](https://www.typescriptlang.org/)
 
 Please open up an issue to nudge me to keep the npm packages up-to-date.
 
@@ -72,7 +72,7 @@ at the [official guide](https://developer.chrome.com/webstore/publish) to more i
 
 ## Resources:
 
-- [Chrome Extension documentation](https://developer.chrome.com/extensions/getstarted)
+-   [Chrome Extension documentation](https://developer.chrome.com/extensions/getstarted)
 
 ---
 

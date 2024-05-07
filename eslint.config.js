@@ -13,8 +13,14 @@ export default tseslint.config(
     },
     eslint.configs.recommended,
     ...tseslint.configs.recommended,
-    reactRecommended,
-    reactJsxRuntime,
+    {
+        ...reactRecommended,
+        ...reactJsxRuntime,
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+        settings: {
+            version: 'detect'
+        }
+    },
     {
         plugins: {
             'simple-import-sort': simpleImportSort
