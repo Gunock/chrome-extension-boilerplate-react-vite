@@ -72,7 +72,7 @@ at the [official guide](https://developer.chrome.com/webstore/publish) to more i
 
 ## Resources:
 
--   [Chrome Extension documentation](https://developer.chrome.com/extensions/getstarted)
+-   [Chrome Extension documentation](https://developer.chrome.com/docs/extensions/get-started)
 
 ---
 
