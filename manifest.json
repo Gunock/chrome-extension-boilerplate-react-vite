@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Chrome Extension with React & Vite",
-    "version": "1.0.0",
+    "version": "REPLACED-BY-VITE",
     "description": "A chrome extension boilerplate built with React 18 and Vite 5",
     "icons": {
         "34": "assets/icons/icon-34.png",
