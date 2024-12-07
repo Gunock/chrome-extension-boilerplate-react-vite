@@ -1,8 +1,7 @@
-import './HomePage.css';
+import { ReactElement, useEffect, useState } from 'react';
 
 import { Alert, Button, Snackbar, Stack } from '@mui/material';
 import Box from '@mui/material/Box';
-import { ReactElement, useEffect, useState } from 'react';
 
 import {
     ChromeApiWrapper,
@@ -12,6 +11,8 @@ import {
 import { ScraperCommand, ScraperMessage } from '../../../common/types/scraper';
 import PopupContent from '../../components/PopupContent/PopupContent';
 import PopupHeader from '../../components/PopupHeader/PopupHeader';
+
+import './HomePage.css';
 
 const CACHE_KEY = 'scrapedPageTitle';
 
@@ -45,7 +46,7 @@ export default function HomePage(): ReactElement {
     }
 
     useEffect(() => {
-        chrome.storage.session.get(CACHE_KEY).then((items) => {
+        chrome.storage.session.get(CACHE_KEY).then(items => {
             const cachedTitle = items[CACHE_KEY];
             setScrapedPageTitle(cachedTitle ?? '');
         });

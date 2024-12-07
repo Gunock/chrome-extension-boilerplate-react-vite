@@ -22,6 +22,13 @@ jobs:
                   cache: 'yarn'
                   cache-dependency-path: 'yarn.lock'
 
+            - name: Cache ESLint cache
+              uses: actions/cache@v4
+              with:
+                  path: js/.cache/.eslintcache
+                  # Invalidate cache when any of the listed files changes
+                  key: ${{ runner.os }}-eslint-${{ hashFiles('js/yarn.lock', 'js/eslint-config/src/*', 'js/eslint-config/index.js', 'js/eslint.config.js', 'js/.cache/.eslintcache') }}
+
             - name: Install dependencies
               run: yarn install --frozen-lockfile
 

@@ -1,8 +1,9 @@
-import './PopupHeader.css';
+import { ReactElement, ReactNode } from 'react';
 
 import ExtensionRoundedIcon from '@mui/icons-material/ExtensionRounded';
 import { Toolbar } from '@mui/material';
-import { ReactElement, ReactNode } from 'react';
+
+import './PopupHeader.css';
 
 export default function PopupHeader(props: { children?: ReactNode }): ReactElement {
     return (

@@ -1,7 +1,8 @@
-import './PopupContent.css';
+import { ReactElement, ReactNode } from 'react';
 
 import Box from '@mui/material/Box';
-import { ReactElement, ReactNode } from 'react';
+
+import './PopupContent.css';
 
 export default function PopupContent(props: { children?: ReactNode }): ReactElement {
     return (
