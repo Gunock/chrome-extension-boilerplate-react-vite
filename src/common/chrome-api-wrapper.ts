@@ -35,7 +35,7 @@ export class ChromeApiWrapper {
                 return currentTab;
             }
 
-            await new Promise((r) => setTimeout(r, 50));
+            await new Promise(r => setTimeout(r, 50));
         }
 
         return null;

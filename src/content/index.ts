@@ -14,7 +14,7 @@ chrome.runtime.onMessage.addListener((message: ChromeMessage<ScraperMessage>) =>
     }
 
     if (message.payload.command === ScraperCommand.SCRAPE) {
-        handleScrapeCommand().catch((error) => console.error(error));
+        handleScrapeCommand().catch(error => console.error(error));
     }
 
     return false;

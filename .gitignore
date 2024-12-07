@@ -36,3 +36,5 @@ dist/
 out/
 *.crx
 *.pem
+
+.cache/

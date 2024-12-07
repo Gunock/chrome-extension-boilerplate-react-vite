@@ -1,4 +1,5 @@
-import { lazy, Suspense } from 'react';
+import { Suspense, lazy } from 'react';
+
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 
 import AppShell from './AppShell/AppShell';
